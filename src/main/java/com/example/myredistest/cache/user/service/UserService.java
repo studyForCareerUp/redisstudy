@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 
-import static com.example.myredistest.cache.config.CacheConfig.CACHE1;
+import static com.example.myredistest.config.CacheConfig.CACHE1;
 
 
 @Service

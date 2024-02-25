@@ -1,4 +1,4 @@
-package com.example.myredistest.cache.config;
+package com.example.myredistest.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
