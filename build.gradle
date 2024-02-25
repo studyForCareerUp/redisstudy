@@ -18,6 +18,7 @@ repositories {
 dependencies {
     implementation 'redis.clients:jedis:4.3.1'
     implementation 'org.springframework.boot:spring-boot-starter-cache' //캐시 사용을 위해 추가
+    implementation 'org.springframework.session:spring-session-data-redis' //session store 를 redis 를 사용하기 위해 추가
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
