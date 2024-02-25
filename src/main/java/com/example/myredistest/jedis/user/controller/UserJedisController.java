@@ -1,8 +1,8 @@
 package com.example.myredistest.jedis.user.controller;
 
 
-import com.example.myredistest.jedis.user.domain.User;
-import com.example.myredistest.jedis.user.domain.UserRepository;
+import com.example.myredistest.cache.user.domain.entity.User;
+import com.example.myredistest.jedis.user.domain.UserJedisRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +13,9 @@ import redis.clients.jedis.JedisPool;
 
 @RestController
 @RequiredArgsConstructor
-public class UserController {
+public class UserJedisController {
 
-    private final UserRepository userRepository;
+    private final UserJedisRepository userRepository;
     private final JedisPool jedisPool;
 
     @GetMapping("/users/{id}/email")

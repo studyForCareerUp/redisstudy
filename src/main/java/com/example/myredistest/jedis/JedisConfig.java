@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import redis.clients.jedis.JedisPool;
 
 @Configuration
-public class RedisConfig {
+public class JedisConfig {
 
     @Bean
     public JedisPool createJedisPool() {
